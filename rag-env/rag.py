@@ -26,7 +26,7 @@ import json
 import time
 import hashlib
 import argparse
-import importlib
+import importlib.util
 import subprocess
 from dataclasses import dataclass, field
 from pathlib import Path
