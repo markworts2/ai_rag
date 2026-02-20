@@ -58,7 +58,7 @@ import ollama as ollama_lib
 
 @dataclass
 class Config:
-    ollama_host:   str = os.getenv("OLLAMA_HOST",   "http://raspberrypi.local:11434")
+    ollama_host:   str = os.getenv("OLLAMA_HOST",   "http://192.168.1.169:11434")
     embed_model:   str = os.getenv("EMBED_MODEL",   "nomic-embed-text")
     chat_model:    str = os.getenv("CHAT_MODEL",    "llama3.2")
     chroma_path:   str = os.getenv("CHROMA_PATH",   "./chroma_db")
