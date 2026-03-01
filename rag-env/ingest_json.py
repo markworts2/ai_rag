@@ -146,7 +146,7 @@ if __name__ == "__main__":
     parser.add_argument("--collection", default="my_collection", help="Collection name")
     parser.add_argument("--db-path", default="./chroma_db", help="ChromaDB persist path")
     parser.add_argument("--text-field", default=None, help="JSON field to use as document text")
-    parser.add_argument("--ollama-url", default="http://localhost:11434", help="Ollama base URL")
+    parser.add_argument("--ollama-url", default="http://192.168.1.169:11434", help="Ollama base URL")
     parser.add_argument("--model", default="nomic-embed-text", help="Ollama embedding model")
     parser.add_argument("--query", default=None, help="Optional: run a test query after ingestion")
     parser.add_argument("--query-n", default=5, type=int, help="Number of query results to return")
