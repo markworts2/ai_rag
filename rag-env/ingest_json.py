@@ -144,7 +144,7 @@ def query_collection(chroma_db_path: str, collection_name: str, query: str,
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Ingest a JSON file into ChromaDB using Ollama embeddings")
     parser.add_argument("json_file", help="Path to the JSON file")
-    parser.add_argument("--collection", default="my_collection", help="Collection name")
+    parser.add_argument("--collection", default="rag_docs", help="Collection name")
     parser.add_argument("--db-path", default="./chroma_db", help="ChromaDB persist path")
     parser.add_argument("--text-field", default=None, help="JSON field to use as document text")
     parser.add_argument("--ollama-url", default="http://192.168.1.169:11434", help="Ollama base URL")
