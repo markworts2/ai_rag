@@ -57,7 +57,9 @@ def ingest_json_to_chroma(
     for i, record in enumerate(records):
         if text_field and text_field in record:
             doc_text = str(record[text_field])
+            print(doc_text)
             metadata = {k: str(v) for k, v in record.items() if k != text_field}
+            print(metadata)
         else:
             doc_text = json.dumps(record)
             metadata = {}
