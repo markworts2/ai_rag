@@ -61,9 +61,10 @@ class OllamaEmbeddingFunction(chromadb.EmbeddingFunction):
 
 def ingest_json_to_chroma(
     json_file_path: str,
-    collection_name: str = "my_collection",
+    collection_name: str = "rag_docs",
     chroma_db_path: str = "./chroma_db",
     text_field: str = None,
+
     ollama_url: str = "http://localhost:11434",
     embedding_model: str = "nomic-embed-text",
 ):
